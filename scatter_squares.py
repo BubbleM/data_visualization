@@ -12,7 +12,10 @@ y_values = [x**2 for x in x_values] # 取x的平方
 # plt.scatter(x_values,y_values,s=100) # 绘制一系列点
 # @param edgecolor='none' 删除数据点的轮廓  matplotlib默认点为蓝色点和黑色轮廓
 # @param c 设置数据点颜色 可设置为一个元组，包含三个0～1之间的小数值，分别表红、绿、蓝的分量
-plt.scatter(x_values,y_values,c=(0,0,0.8),edgecolor='none',s=40)
+# plt.scatter(x_values,y_values,c=(0,0,0.8),edgecolor='none',s=40)
+
+# 将参数c设置为一个y值列表 并使用参数cmap告知pyplot使用哪个颜色映射 将y值较小的映射为浅蓝色，将y值较大的显示为深蓝色
+plt.scatter(x_values,y_values,c=y_values,cmap=plt.cm.Blues,edgecolor='none',s=40)
 
 
 # 设置图表标题并给坐标轴加上标签
