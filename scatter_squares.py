@@ -29,4 +29,9 @@ plt.tick_params(axis="both",which='major',labelsize=14)
 # 设置每个坐标轴的取值范围
 plt.axis([0,1100,0,1100000])
 
-plt.show()
+# plt.show()
+
+# 让程序自动将图表保存到文件中
+# @param 实参1 指定要以什么样的文件名保存图表  文件将存储在当前py文件所在目录下
+# @param 实参2 指定将图表多余的空白区域裁剪掉  如果要保留空白区域，可省略该参数
+plt.savefig('squares_plot.png',bbox_inches='tight')
