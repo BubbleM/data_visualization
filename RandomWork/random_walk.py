@@ -8,7 +8,7 @@ class RandomWalk():
 		self.x_values = [0]
 		self.y_values = [0]
 	def fill_walk(self):
-	"""计算随机漫步包含的所有点"""
+	# """计算随机漫步包含的所有点 """
 	# 不断漫步，直到列表达到指定的长度
 		while len(self.x_values) < self.num_points:
 			# 决定前进方向以及沿这个方向前进的距离
