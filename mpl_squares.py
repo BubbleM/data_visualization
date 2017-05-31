@@ -19,3 +19,4 @@ plt.ylabel("Square of Value",fontsize=14)
 plt.tick_params(axis="both",labelsize=14)
 
 plt.show() # 打开matplotlib查看器,并显示会只的图形
+
